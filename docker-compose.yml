@@ -1,0 +1,7 @@
+version: '2'
+services:
+  node_8:
+    image: redelivre/alpine-node:8
+    build:
+      context: .
+      dockerfile: Dockerfile.8

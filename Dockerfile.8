@@ -1,0 +1,7 @@
+FROM mhart/alpine-node:8
+
+RUN apk --update upgrade \
+    && apk add sudo make git \
+    && addgroup -g 1000 redelivre \
+    && adduser -G redelivre -D -h /home/hacker hacker \
+    && echo '%redelivre ALL=(ALL:ALL) NOPASSWD:ALL' >> /etc/sudoers
