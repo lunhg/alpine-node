@@ -5,3 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.8
+      args:
+        - "username=hacker"
+        - "pwd=segredo"
+        - "gid=1001"
+        - "groupname=redelivre"
+        - "dependencies=sudo make git"
