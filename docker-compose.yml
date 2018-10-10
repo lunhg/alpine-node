@@ -1,13 +1,13 @@
 version: '2'
+
 services:
-  node_8:
-    image: redelivre/alpine-node:8
+  node:
+    image: redelivre/alpine-node
     build:
       context: .
-      dockerfile: Dockerfile.8
+      dockerfile: Dockerfile
       args:
-        - "username=hacker"
-        - "pwd=segredo"
-        - "gid=1001"
-        - "groupname=redelivre"
-        - "dependencies=sudo make git"
+        - "username=$username"
+
+        
+      
