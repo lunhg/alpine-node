@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
       args:
         - "username=$username"
-
+        - "NODE_VERSION=$NODE_VERSION"
+        - "NPM_VERSION=6"
+        - "YARN_VERSION=latest"
         
       
