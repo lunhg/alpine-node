@@ -10,5 +10,7 @@ before_install:
   - docker-compose -v
 
 script:
+  - chmod +x ./install
+  - ./install.sh
   - docker-compose up -d node
   - docker run redelivre/alpine-node -it about
