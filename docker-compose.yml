@@ -8,6 +8,5 @@ services:
       dockerfile: Dockerfile
       args:
         - "username=$USER"
-        - "NODE_VERSION=$NODE_VERSION"
         
       
