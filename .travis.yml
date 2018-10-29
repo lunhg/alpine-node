@@ -6,8 +6,9 @@ services:
 before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
-  - chmod +x ./install
-  - source ./install.sh && ./install.sh
+  - chmod +x ./install \
+    && source /home/$(whoami)/install.sh \
+    && /home/$(whoami)/install.sh
 
 install:
   - docker-compose up -d node
