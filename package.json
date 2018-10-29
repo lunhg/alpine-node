@@ -1,0 +1,6 @@
+{
+    "name": "alpine-node"
+    "scripts": {
+      "start": "node index.js" 
+    }
+}
