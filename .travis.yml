@@ -13,7 +13,7 @@ before_install:
   - docker-compose --version
 
 install:
-  - docker-compose up -d --build --remove-orphans node
-  - docker-compose run -d --user=$(whoami) node /bin/bash -c "npm run --prefix=/home/$(whoami) about"
-  - docker-compose ps node
-  - docker-compose logs node
+  - docker-compose up -d node
+
+language: node
+
