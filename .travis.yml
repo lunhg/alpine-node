@@ -1,5 +1,9 @@
 sudo: required
 
+env:
+  DOCKER_COMPOSE_VERSION: 1.22.0
+  NODE_VERSION: latest
+
 services:
   - docker
 
@@ -8,5 +12,5 @@ before_install:
   - chmod +x docker-compose
 
 install:
-  - NODE_VERSION=latest docker-compose up -d node
+  - docker-compose up -d node
   - docker run redelivre/alpine-node -it about
