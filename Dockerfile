@@ -10,6 +10,5 @@ RUN adduser \
     && chown -R $username: /home/$username
 USER $username
 WORKDIR /home/$username
-RUN node --version \
-    yarn --version
+ENTRYPOINT npm run
 
