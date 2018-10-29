@@ -13,4 +13,4 @@ before_install:
 
 install:
   - docker-compose up -d node
-  - docker run redelivre/alpine-node -it about
+  - docker-compose run node about
