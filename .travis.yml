@@ -6,9 +6,6 @@ services:
 before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
-  - chmod +x lunhg/alpine-node/install.sh
-  - source lunhg/alpine-node/install.sh \
-  - PREFIX=lunhg/alpine-node lunhg/alpine-node/install.sh
 
 install:
   - docker-compose up -d node
